@@ -105,3 +105,51 @@ ages_d = {"Ashok": 27, "Swathi": 23, "Kishore": 26}
 for name, age in ages_d.items():
 	print(f"Person Named: {name}")
 	print(f"Age of: {age}")
+
+# Functions
+
+def hello_world():
+	print("Hello, World!")
+
+hello_world()
+
+def print_name(name):
+	print(f"Name is {name}")
+
+print_name("Ashok")
+print_name("Swathi")
+
+
+output = print_name("Ashok")
+print(output)
+
+def add_two(num):
+	return num + 2
+
+result = add_two(98)
+print(result)
+
+def add(num1, num2):
+	return num1 + num2
+
+result1 = add(78, 34)
+print(result1)
+
+def contact_card(name, age, car_model):
+	return f"{name} is {age} and drives a {car_model}"
+
+print (contact_card("Keith", 29, "Honda Civic"))
+print(contact_card(age=29, car_model="Civic", name="Keith"))
+print(contact_card("Keith", car_model="Civic", age="29"))
+#contact_card(age="29", "Keith", car_model="Civic")
+
+
+def can_drive(age, driving_age=16):
+	return age >= driving_age
+
+test1 = can_drive(16)
+test2 = can_drive(15, driving_age=18)
+print(test1)
+print(test2)
+
+
