@@ -8,6 +8,8 @@ with open('xmen.txt', 'w+') as my_file:
         'Nightcrawler\n',
     ])
 
+
+
 my_file = open('xmen.txt', 'r')
 with my_file:
     print(my_file.read())
